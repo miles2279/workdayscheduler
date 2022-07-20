@@ -1,0 +1,70 @@
+body {
+    background-color: #ddd;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: #ffa200;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.calendar-container {
+    background-color: #fff;
+    margin: 2.55%;
+    margin-top: 150px;
+    border-radius: 10px;
+    padding: 32px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.time-slot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 100%;
+    border-radius: 10px;
+    flex: 4;
+    text-align: center;
+}
+
+.time-slot-header, .time-slot-save {
+    flex: 1;
+}
+
+.time-slot-header, .time-slot-content, .time-slot-save {
+    min-height: 100px;
+    height: 100%;
+}
+
+.time-slot-header {
+    border: 1px dashed #999;
+    border-radius: 10px 0 0 10px;
+}
+
+.time-slot-save {
+    background-color: #ffa200;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.time-slot-content {
+    border: none;
+    flex: 2;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
